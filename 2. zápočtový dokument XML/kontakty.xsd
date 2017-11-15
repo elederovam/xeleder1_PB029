@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="kontakty" type="kontaktyType"/>
+
+    <xsd:complexType name="kontaktyType">
+        <xsd:sequence>
+            <xsd:element name="kontakt" minOccurs="0" maxOccurs="unbounded" type="kontaktType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="kontaktType">
+        <xsd:sequence>
+            <xsd:element name="osoba" type="osobaType"/>
+            <xsd:element name="emaily" minOccurs="0" type="emailyType"/>
+            <xsd:element name="tel_cisla" minOccurs="0" type="tel_cislaType"/>
+            <xsd:element name="web_stranky" minOccurs="0" type="web_strankyType"/>
+            <xsd:element name="dalsi_kontakty" minOccurs="0" type="dalsi_kontaktyType"/>
+            <xsd:element name="postovni_adresy" minOccurs="0" type="postovni_adresyType"/>
+            <xsd:element name="poznamky" minOccurs="0" type="poznamkyType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="osobaType">
+        <xsd:sequence>
+            <xsd:element name="titul" minOccurs="0" type="nonemptyStringMax127Chars"/>
+            <xsd:element name="jmeno" type="nonemptyStringMax127Chars"/>
+            <xsd:element name="prijmeni" type="nonemptyStringMax127Chars"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="emailyType">
+        <xsd:sequence>
+            <xsd:element name="email" maxOccurs="unbounded" type="emailType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="emailType">
+        <xsd:simpleContent>
+          <xsd:extension base="email">
+            <xsd:attribute name="typ" type="typ_kontaktu" />
+          </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tel_cislaType">
+        <xsd:sequence>
+            <xsd:element name="tel_cislo" maxOccurs="unbounded" type="tel_cisloType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tel_cisloType">
+        <xsd:simpleContent>
+          <xsd:extension base="tel_cislo">
+            <xsd:attribute name="typ" type="typ_kontaktu" />
+          </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+  <xsd:complexType name="web_strankyType">
+        <xsd:sequence>
+            <xsd:element name="web_stranka" maxOccurs="unbounded" type="web_strankaType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="web_strankaType">
+        <xsd:simpleContent>
+          <xsd:extension base="web_stranka">
+            <xsd:attribute name="typ" type="typ_kontaktu" />
+          </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="dalsi_kontaktyType">
+        <xsd:sequence>
+            <xsd:element name="dalsi_kontakt" maxOccurs="unbounded" type="dalsi_kontaktType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="dalsi_kontaktType">
+        <xsd:sequence>
+            <xsd:element name="jmeno_sluzby" type="nonemptyLetterNumStringMax127Chars"/>
+            <xsd:element name="id_uzivatele" type="nonemptyStringMax127Chars"/>
+        </xsd:sequence>
+        <xsd:attribute name="typ" type="typ_kontaktu" />
+    </xsd:complexType>
+
+    <xsd:complexType name="postovni_adresyType">
+        <xsd:sequence>
+            <xsd:element name="postovni_adresa" maxOccurs="unbounded" type="postovni_adresaType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="postovni_adresaType">
+        <xsd:sequence>
+            <xsd:element name="ulice" type="nonemptyStringMax127Chars"/>
+            <xsd:element name="cislo_popisne" type="cislo_popisne"/>
+            <xsd:element name="psc" type="psc"/>
+            <xsd:element name="mesto" type="nonemptyStringMax127Chars"/>
+        </xsd:sequence>
+        <xsd:attribute name="typ" type="typ_kontaktu" />
+    </xsd:complexType>
+
+    <xsd:complexType name="poznamkyType">
+        <xsd:sequence>
+            <xsd:element name="poznamka" maxOccurs="unbounded" type="stringMax65535Chars"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:simpleType name="typ_kontaktu">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="osobni"/>
+            <xsd:enumeration value="pracovni"/>
+            <xsd:enumeration value="jiny"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="email">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[^@]+@[^\.]+\..+"/>
+            <xsd:maxLength value="127"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tel_cislo">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="(\+[0-9]{3}\s?)?([0-9]{3}\s?){3}"/>
+            <xsd:maxLength value="127"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="web_stranka">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="(http://|https://)?\S+\.\S+"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="cislo_popisne">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d+[a-z]?"/>
+            <xsd:maxLength value="127"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="psc">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="\d{3}\s?\d{2}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <xsd:simpleType name="nonemptyLetterNumStringMax127Chars">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="127"/>
+            <xsd:pattern value="(\p{L}|[0-9])+"/>  <!-- http://www.xmlschemareference.com/regularExpression.html -->
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="nonemptyStringMax127Chars">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="127"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="stringMax65535Chars">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="65535"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>
