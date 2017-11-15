@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<kontakty>
+    <kontakt>
+        <emaily>
+            <email typ="pracovni">petr.novy@gmail.com</email>
+            <email typ="pracovni">novy.petr@gmail.com</email>
+        </emaily>
+        <tel_cisla>
+            <tel_cislo typ="pracovni">+420 123 456 789</tel_cislo>
+            <tel_cislo typ="osobni">987654321</tel_cislo>
+        </tel_cisla>
+        <web_stranky>
+            <web_stranka>www.petrnovy.cz</web_stranka>
+            <web_stranka typ="osobni">www.petuvblog.blog.cz</web_stranka>
+        </web_stranky>
+        <dalsi_kontakty>
+            <dalsi_kontakt typ="jiny">
+                <jmeno_sluzby>Skype</jmeno_sluzby>
+                <id_uzivatele>petrnovy</id_uzivatele>
+            </dalsi_kontakt>
+        </dalsi_kontakty>
+        <postovni_adresy>
+            <postovni_adresa typ="pracovni">
+                <ulice>Vejrostova</ulice>
+                <cislo_popisne>2</cislo_popisne>
+                <psc>635 00</psc>
+                <mesto>Brno</mesto>
+            </postovni_adresa>
+            <postovni_adresa typ="osobni">
+                <ulice>Dlouhá</ulice>
+                <cislo_popisne>1024</cislo_popisne>
+                <psc>625 00</psc>
+                <mesto>Brno</mesto>
+            </postovni_adresa>
+        </postovni_adresy>
+        <poznamky>
+            <poznamka>krátká poznámka</poznamka>
+            <poznamka>
+            Nějaká poznámka
+            na víc řádků.
+            </poznamka>
+        </poznamky>
+    </kontakt>
+</kontakty>
