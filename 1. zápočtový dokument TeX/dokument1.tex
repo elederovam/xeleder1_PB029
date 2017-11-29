@@ -1,7 +1,15 @@
 \documentclass[a4paper,12pt,oneside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
-\usepackage{hyperref}
+%\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage[czech]{babel}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage[unicode]{hyperref}
+\usepackage{lipsum}
+
 \hypersetup{
     colorlinks,%
     citecolor=black,%
@@ -10,13 +18,8 @@
     urlcolor=black
     }
 
-\usepackage[czech]{babel}
-\usepackage[protrusion,expansion]{microtype}
-\usepackage{enumitem}
-
 \pagenumbering{gobble}
 
-\usepackage{titlesec}
 \titleformat{\section}
 {\normalfont\huge}
 {\thesection.}{1em}{}
@@ -29,9 +32,19 @@
 
 \begin{document}
 
-{\section*{Markéta Elederová}
+\begin{wrapfigure}[0]{r}{0.3\textwidth}
+%\begin{figure}[htbp] % Plovouc� prost�ed� s obr�zkem se bude TeX 
+                        % sna�it um�stit na tomto m�st� v textu, na za��tku
+                        % str�nky, na konci str�nky nebo na samostatn� str�nce.
+       \begin{center}
+            \includegraphics[width=0.30\textwidth]{portret}
+        \end{center}
+%\end{figure}
+\end{wrapfigure}
 
+{\section*{Markéta Elederová}
 %\noindent\rule{8cm}{0.4pt}
+%\lipsum[1]
 
 \subsection*{Kontakt}
  Adresa: Chrpová 503/9, 64100, Brno  \\
@@ -51,6 +64,7 @@ Osmileté studium (zaměření na klasické jazyky)
 \subsection*{Pracovní zkušenosti}
 Brigáda: katalogizace knih dle standardu (AACR2R, MARC21)
     
+%\lipsum[2]
 \subsection*{Znalosti a dovednosti}
 Informatika – 3. ročník fakulty informatiky:
 \begin{itemize}[label={--}]
@@ -72,7 +86,7 @@ IQ: 160 (oficiální IQ test společnosti Mensa) \\
 
 \subsection*{Zájmy}
 Vedoucí v křesťanské organizaci pro děti a mládež Royal Rangers \\
-Deskové hry, turistika
+Deskové hry, turistika}
 
 \end{document}
 
