@@ -1,7 +1,11 @@
 dokument*
 !dokument1.tex
 !dokument2.tex
+!dokument2.ind
 rejstrik*
 odplist*
 !odplist.tex
 !odplist.sty
+mpobrazek*
+hvezdicka*
+!hvezdicka.mp

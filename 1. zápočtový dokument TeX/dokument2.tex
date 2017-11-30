@@ -1,6 +1,7 @@
 \documentclass[a4rpaper,11pt,oneside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
+\usepackage{graphicx}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,%
@@ -25,7 +26,9 @@
 \addbibresource{databaze-literatury.bib}
 
 \usepackage{makeidx}
+\usepackage[noautomatic,nonewpage]{imakeidx}
 \makeindex
+\indexsetup{level=\section*}
 
 \usepackage[protrusion,expansion]{microtype}
 
@@ -47,6 +50,8 @@
 
 %%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
 
+\preto\endtheindex{\par\nobreak\noindent\hfill}
+
 \begin{document}
 
 \microtypesetup{expansion=true,  protrusion=true}
@@ -54,64 +59,66 @@
 
 \section{Bible}
 
-Bible, nebo také Písmo svaté, Boží slovo nebo Kniha knih, je základní knihou pro křesťany. Název „bible“ pochází z řeckého slova „\textgreek{βἰβλος}, což znamená „kniha“. Ve skutečnosti se však jedná spíše o celou knihovnu historických spisů, přísloví a mouder, zákonů, prorockých knih, příběhů, dopisů a mnoho dalšího od různých (často nám neznámých) autorů z různých prostředí a dob mezi více než jedním tisíciletím př. n. l. a prvním až druhým stoletím n. l.
+Bible, nebo také Písmo svaté, Boží slovo nebo Kniha knih, je základní knihou pro křesťany. Název „bible“ pochází z~řeckého slova „\textgreek{βἰβλος}, což znamená „kniha“. Ve skutečnosti se však jedná spíše o~celou knihovnu historických spisů, přísloví a~mouder, zákonů, prorockých knih, příběhů, dopisů a~mnoho dalšího od různých (často nám neznámých) autorů z~různých prostředí a~dob mezi více než jedním tisíciletím př. n. l. a~prvním až druhým stoletím n. l.
 
 \subsection{Starý zákon}
 
-Starší část bible se nazývá Starý zákon nebo Stará smlouva, podle smlouvy Boha se svým lidem naplněné v Ježíši Kristu, který s nimi pak uzavřel novou smlouvu, z toho je zase název pro Nový zákon.
+Starší část bible se nazývá Starý zákon nebo Stará smlouva, podle smlouvy Boha se svým lidem naplněné v~Ježíši Kristu, který s~nimi pak uzavřel novou smlouvu, z~toho je zase název pro Nový zákon.
 
-Starému zákonu se říká také „hebrejská bible“ ~\cite{online-bible}, je to kniha společná pro křesťany \index{křesťané} i židy \index{židé}, v židovství se nazývá Tenak (nebo Tenach), podle počátečních písmen jejích tří částí: Tórá (Zákon), Nebím (Proroci) a Ketubím (Spisy) ~\cite[strana 17]{cep},  které tvoří dohromady židovský, nebo tzv. palestinský kánon. V římskokatolické církvi \index{křesťané!římskokatolická církev} mají k těmto knihám přidané navíc ještě další, tzv. deuterokanonické (nebo apokryfní), ale jinak Starý zákon běžně tvoří třicet devět knih, stejných jako mají židé \index{židé}, akorát jsou v jiném pořadí.
+Starému zákonu se říká také „hebrejská bible“ ~\cite{online-bible}, je to kniha společná pro křesťany\index{křesťané} i~židy \index{židé}, v~židovství se nazývá Tenak (nebo Tenach), podle počátečních písmen jejích tří částí: Tórá (Zákon), Nebím (Proroci) a~Ketubím (Spisy) ~\cite[strana 17]{cep},  které tvoří dohromady židovský, nebo tzv. palestinský kánon. V~římskokatolické církvi \index{křesťané!římskokatolická církev} mají k~těmto knihám přidané navíc ještě další, tzv. deuterokanonické (nebo apokryfní), ale jinak Starý zákon běžně tvoří třicet devět knih, stejných jako mají židé\index{židé}, akorát jsou v~jiném pořadí.
 
-Starý zákon je psán hebrejsky, jen malé části (v knihách Ezdráš a Daniel) jsou aramejské.
+Starý zákon je psán hebrejsky, jen malé části (v~knihách Ezdráš a~Daniel) jsou aramejské.
 
 \subsection{Nový zákon}
 
-Novější, a taky o dost kratší částí bible je Nový zákon. Obsahuje dvacet sedm knih: čtyři evangelia (\textgreek{εὐαγγέλιον} = dobrá zpráva), Skutky apoštolské, dopisy (nejčastěji od apoštola Pavla různým církvím nebo svým spolupracovníkům, dále listy Janovy, Petrovy a Judův) a Zjevení Janovo, neboli Apokalypsa (\textgreek{ἀποκάλυψις} = zjevení). Původním jazykem Nového zákona je řečtina.
+Novější, a~taky o~dost kratší částí bible je Nový zákon. Obsahuje dvacet sedm knih: čtyři evangelia (\textgreek{εὐαγγέλιον} = dobrá zpráva), Skutky apoštolské, dopisy (nejčastěji od apoštola Pavla různým církvím nebo svým spolupracovníkům, dále listy Janovy, Petrovy a~Judův) a~Zjevení Janovo, neboli Apokalypsa (\textgreek{ἀποκάλυψις} = zjevení). Původním jazykem Nového zákona je řečtina.
 
 \section{Překlady bible}
 
 Bible je jednoznačně nejpřekládanější knihou na světě. Celá bible je přeložená do více než 530 jazyků, alespoň část pak do téměř tří tisíců jazyků.~\cite{wycliffe}
 
-Mezi první jazyky, do kterých byla bible přeložená, patřila řečtina a latina. Dnes už si může bibli ve svém vlastním jazyce přečíst většina lidí a na překladech do dalších jazyků se stále pracuje.
+Mezi první jazyky, do kterých byla bible přeložená, patřila řečtina a~latina. Dnes už si může bibli ve svém vlastním jazyce přečíst většina lidí a~na překladech do dalších jazyků se stále pracuje.
 
 \subsection{Septuaginta}
 
 \subsubsection{Vznik}
-Podle Listu Aristeova byla Septuaginta \index{Septuaginta} pořízena roku 270 př. n. l., když egyptský vladař Ptolemaios II. Filadelfos pozval z Jeruzaléma do Alexandrie izraelské učence, po šesti z každého z dvanácti kmenů Izraele, takže celkem sedmdesát dva, aby přeložili Tóru z hebrejštiny do řečtiny.~\cite{LXX}  Na překladu pracovali sedmdesát dva dní a výsledkem byla Septuaginta  \index{Septuaginta} (z latiny: septuāgintā = sedmdesát), jak byla později nepřesně nazvaná podle počtu sedmdesáti dvou učenců, kteří ji překládali.
+Podle Listu Aristeova byla Septuaginta\index{Septuaginta} pořízena roku 270 př. n. l., když egyptský vladař Ptolemaios II. Filadelfos pozval z~Jeruzaléma do Alexandrie izraelské učence, po šesti z~každého z~dvanácti kmenů Izraele, takže celkem sedmdesát dva, aby přeložili Tóru z~hebrejštiny do řečtiny.~\cite{LXX}  Na překladu pracovali sedmdesát dva dní a~výsledkem byla Septuaginta\index{Septuaginta} (z~latiny: septuāgintā = sedmdesát), jak byla později nepřesně nazvaná podle počtu sedmdesáti dvou učenců, kteří ji překládali.
 
-Ve skutečnosti však tento překlad vznikl pravděpodobně proto, že Izraelité \index{židé} v diaspoře kolem 3. století př. n. l. přestávali mluvit, a tedy i rozumět hebrejsky a potřebovali překlad do řečtiny, aby mohli rozumět svým svatým textům. Navíc na překladu nejspíš pracovali různí lidé v mnohem delším časovém období než sedmdesát dva dní.
+Ve skutečnosti však tento překlad vznikl pravděpodobně proto, že Izraelité\index{židé} v~diaspoře kolem 3. století př. n. l. přestávali mluvit, a~tedy i~rozumět hebrejsky a~potřebovali překlad do řečtiny, aby mohli rozumět svým svatým textům. Navíc na překladu nejspíš pracovali různí lidé v~mnohem delším časovém období než sedmdesát dva dní.
 
 \subsubsection{Kánon}
-Septuaginta  \index{Septuaginta} se jinak nazývá také „alexandrijský typ“ a byly do ní kromě kanonických knih zahrnuty i jiné spisy – knihy deuterokanonické a některé další, které uznává jen pravoslavná církev~\cite{kanon}\index{křesťané!pravoslavná církev}. Bylo také změněno pořadí knih, aby více chronologicky odpovídalo, a je poměrně hodně podobné pořadí, které máme v biblích dnes.
+Septuaginta\index{Septuaginta} se jinak nazývá také „alexandrijský typ“ a~byly do ní kromě kanonických knih zahrnuty i~jiné spisy – knihy deuterokanonické a~některé další, které uznává jen pravoslavná církev~\cite{kanon}\index{křesťané!pravoslavná církev}. Bylo také změněno pořadí knih, aby více chronologicky odpovídalo, a~je poměrně hodně podobné pořadí, které máme v~biblích dnes.
 
 \subsubsection{Další řecké překlady}
-Nejen odlišný kánon, ale i chyby v překladu Septuaginty \index{Septuaginta} vedly později k nedorozuměním mezi židy \index{židé} a křesťany \index{křesťané}. Ve 2. století tak vznikaly další židovské \index{židé} překlady do řečtiny, přesnější podle hebrejského originálu, byly to Theodotionův, Aquilův a Symmachův. V polovině 3. století vytvořil teolog Origenes Hexaplu, dílo srovnávající původní hebrejský text s různými řeckými překlady včetně Septuaginty  \index{Septuaginta}.~\cite[strana 18]{cep}
+Nejen odlišný kánon, ale i~chyby v~překladu Septuaginty\index{Septuaginta} vedly později k~nedorozuměním mezi židy \index{židé} a~křesťany\index{křesťané}. Ve 2. století tak vznikaly další židovské\index{židé} překlady do řečtiny, přesnější podle hebrejského originálu, byly to Theodotionův, Aquilův a~Symmachův. V~polovině 3. století vytvořil teolog Origenes Hexaplu, dílo srovnávající původní hebrejský text s~různými řeckými překlady včetně Septuaginty\index{Septuaginta}.~\cite[strana 18]{cep}
 
 \subsection{Vulgáta}
 \subsubsection{Vznik}
-Nejstarším latinským překladem bible je Vetus latina, jsou to spíše neucelené překlady biblických knih z řečtiny. Časem se vyvinuly dva typy tohoto překladu, Itala a Africana. Mnich Hieronymus (Jeroným), který dostal za úkol od papeže Damasa tyto verze zrevidovat, později kolem roku 400 vytvořil nový latinský překlad přímo z hebrejštiny, Vulgátu \index{Vulgáta}. Jen deuterokanonické knihy Hieronymus nepřekládal tak pečlivě, některé dokonce jen převzal z Vetus latiny jak byly, nepovažoval je totiž zřejmě za tolik důležité jako ostatní.~\cite[strana 18-19]{cep}  Text Nového zákona je z větší části také převzatý.
+Nejstarším latinským překladem bible je Vetus latina, jsou to spíše neucelené překlady biblických knih z~řečtiny. Časem se vyvinuly dva typy tohoto překladu, Itala a~Africana. Mnich Hieronymus (Jeroným), který dostal za úkol od papeže Damasa tyto verze zrevidovat, později kolem roku 400 vytvořil nový latinský překlad přímo z~hebrejštiny, Vulgátu\index{Vulgáta}. Jen deuterokanonické knihy Hieronymus nepřekládal tak pečlivě, některé dokonce jen převzal z~Vetus latiny jak byly, nepovažoval je totiž zřejmě za tolik důležité jako ostatní.~\cite[strana 18-19]{cep}  Text Nového zákona je z~větší části také převzatý.
 
 \subsubsection{Neovulgata}
-Neovulgata \index{Vulgáta!Neovulgata}, nebo také Nova Vulgata, je revize Vulgáty pořízená římsko-katolickou církví \index{křesťané!římskokatolická církev} v roce 1979. Jsou v ní spíše drobné změny a neobsahuje pseudoapokryfní knihy. Je to nyní oficiální latinský překlad římskokatolické církve \index{křesťané!římskokatolická církev}.~\cite[strana 19]{cep}
+Neovulgata\index{Vulgáta!Neovulgata}, nebo také Nova Vulgata, je revize Vulgáty pořízená římsko-katolickou církví\index{křesťané!římskokatolická církev} v~roce 1979. Jsou v~ní spíše drobné změny a~neobsahuje pseudoapokryfní knihy. Je to nyní oficiální latinský překlad římskokatolické církve\index{křesťané!římskokatolická církev}.~\cite[strana 19]{cep}
 
 \begin{comment}
 \subsection{České překlady}
 \subsubsection{Nejstarší české překlady}
-Nejstarším překladem bible na našem území byl cyrilometodějský překlad do staroslověnštiny, první překlady do češtiny vznikaly v klášterech někdy v 11. – 12. století, nejstarší rukopisná česká bible je z konce 14. století Leskovecko-Drážďanská. Překlad, který se dodnes celý zachoval, je bible Litoměřicko-Třeboňská z počátku 15. století.
+Nejstarším překladem bible na našem území byl cyrilometodějský překlad do staroslověnštiny, první překlady do češtiny vznikaly v~klášterech někdy v~11. – 12. století, nejstarší rukopisná česká bible je z~konce 14. století Leskovecko-Drážďanská. Překlad, který se dodnes celý zachoval, je bible Litoměřicko-Třeboňská z~počátku 15. století.
 
-Důležitým mezníkem byl vynález knihtisku, různé překlady bible patřily k prvním tištěným knihám vůbec. Mezi významné výtisky patří například Pražská bible z roku 1488, o rok mladší bible Kutnohorská, nebo bible Veleslavínská vytištěná roku 1613.~\cite[strana 5-6]{cep}
+Důležitým mezníkem byl vynález knihtisku, různé překlady bible patřily k~prvním tištěným knihám vůbec. Mezi významné výtisky patří například Pražská bible z~roku 1488, o~rok mladší bible Kutnohorská, nebo bible Veleslavínská vytištěná roku 1613.~\cite[strana 5-6]{cep}
 
 \subsubsection{Bible Kralická}
-Asi nejslavnějším českým překladem bible je bible Kralická, která vycházela v šesti dílech (tzv. šestidílka) v letech 1597–1594, její nejznámější vydání v jednom díle je z roku 1613. Na překladu pracovali bratři z Jednoty bratrské a bible tiskli v Kralicích, odkud je i její název.
+Asi nejslavnějším českým překladem bible je bible Kralická, která vycházela v~šesti dílech (tzv. šestidílka) v~letech 1597–1594, její nejznámější vydání v~jednom díle je z~roku 1613. Na překladu pracovali bratři z~Jednoty bratrské a~bible tiskli v~Kralicích, odkud je i~její název.
 
-Kralická bible je prvním překladem do češtiny z původních jazyků a nejméně po čtyři sta let byla jednoznačně nejpoužívanějším překladem u nás.
+Kralická bible je prvním překladem do češtiny z~původních jazyků a~nejméně po čtyři sta let byla jednoznačně nejpoužívanějším překladem u~nás.
 
 \subsubsection{Moderní české překlady}
-Později se objevují různé další překlady bible do češtiny, nejvýznamnější je český ekumenický překlad vydaný k čtyřstému výročí bible Kralické roku 1979. S počátkem dvacátého prvního století vychází stále více nových kvalitních překladů, jako například Bible 21, Český studijní překlad, Slovo na cestu, Jeruzalémská bible a další.
+Později se objevují různé další překlady bible do češtiny, nejvýznamnější je český ekumenický překlad vydaný k~čtyřstému výročí bible Kralické roku 1979. S~počátkem dvacátého prvního století vychází stále více nových kvalitních překladů, jako například Bible 21, Český studijní překlad, Slovo na cestu, Jeruzalémská bible a~další.
 \end{comment}
 
+\begin{center}
+\includegraphics[width=0.05\textwidth]{hvezdicka-001.mps}
+\end{center}
 
-%\bibliography{databaze-literatury}
 \printbibliography[heading=bibintoc]
 
 \printindex
