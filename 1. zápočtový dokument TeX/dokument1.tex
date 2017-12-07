@@ -1,7 +1,6 @@
 \documentclass[a4paper,12pt,oneside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
-%\usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage[czech]{babel}
 \usepackage{enumitem}
@@ -11,10 +10,10 @@
 \usepackage{lipsum}
 
 \hypersetup{
-    colorlinks,%
-    citecolor=black,%
-    filecolor=black,%
-    linkcolor=black,%
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
     urlcolor=black
     }
 
@@ -24,69 +23,66 @@
 {\normalfont\huge}
 {\thesection.}{1em}{}
 
-%\subsectionfont{\color{blue}}
-
-\setlist[itemize]{noitemsep}
+\setlist[itemize]{noitemsep, leftmargin=0mm}
 
 %%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 \begin{wrapfigure}[0]{r}{0.3\textwidth}
-%\begin{figure}[htbp] % Plovouc� prost�ed� s obr�zkem se bude TeX 
-                        % sna�it um�stit na tomto m�st� v textu, na za��tku
-                        % str�nky, na konci str�nky nebo na samostatn� str�nce.
        \begin{center}
             \includegraphics[width=0.30\textwidth]{portret}
         \end{center}
-%\end{figure}
 \end{wrapfigure}
 
 {\section*{Markéta Elederová}
-%\noindent\rule{8cm}{0.4pt}
-%\lipsum[1]
 
 \subsection*{Kontakt}
- Adresa: Chrpová 503/9, 64100, Brno  \\
- Email: \href{mailto:445491@mail.muni.cz}{445491@mail.muni.cz} \\
- Mobil: +420 123 456 789
+\begin{itemize}[label={}]
+\item Adresa: Chrpová 503/9, 64100, Brno 
+\item Email: \href{mailto:445491@mail.muni.cz}{445491@mail.muni.cz}
+\item Mobil: +420 123 456 789
+\end{itemize}
  
 \subsection*{Vzdělání}
-\textbf{Masarykova univerzita} \\
-2015 – nyní \\
-Fakulta informatiky \\
-Obor: Aplikovaná informatika \\
-\\
-\textbf{Klasické a španělské gymnázium Brno-Bystrc} \\
-2007 – 2015 (maturita) \\
-Osmileté studium (zaměření na klasické jazyky)
+\subsubsection*{Masarykova univerzita}
+\begin{itemize}[label={}]
+\item 2015 – nyní
+\item Fakulta informatiky, obor Aplikovaná informatika
+\end{itemize}
+\subsubsection*{Klasické a~španělské gymnázium Brno-Bystrc}
+\begin{itemize}[label={}]
+\item 2007 – 2015 (maturita)
+\item Osmileté studium (zaměření na klasické jazyky)
+\end{itemize}
 
 \subsection*{Pracovní zkušenosti}
-Brigáda: katalogizace knih dle standardu (AACR2R, MARC21)
-    
-%\lipsum[2]
-\subsection*{Znalosti a dovednosti}
-Informatika – 3. ročník fakulty informatiky:
-\begin{itemize}[label={--}]
-\item Java – středně pokročilý; PHP, Python, C++, C – základy
-\item SQL
-\item git
+\begin{itemize}[label={}]
+\item Brigáda: katalogizace knih dle standardu (AACR2R, MARC21)
 \end{itemize}
 
-\noindent
-Cizí jazyky:
-\begin{itemize}[label={--}]
-\item angličtina – středně pokročilý
-\item němčina – mírně pokročilý
+\subsection*{Znalosti a~dovednosti}
+\begin{itemize}[label={}]
+\item Informatika – 3. ročník fakulty informatiky:
+	\begin{itemize}[label={--}, leftmargin=6mm]
+	\item Java – středně pokročilý; PHP, Python, C++, C – základy
+	\item Spring (Java), Nette (PHP), SQL
+	\item git
+	\end{itemize}
+\item Cizí jazyky:
+	\begin{itemize}[label={--}, leftmargin=6mm]
+	\item angličtina – středně pokročilý
+	\item němčina – mírně pokročilý
+	\end{itemize}
+\item IQ: 160 (oficiální IQ test společnosti Mensa)
+\item Řidičský průkaz skupiny B
 \end{itemize}
-
-\noindent
-IQ: 160 (oficiální IQ test společnosti Mensa) \\
-Řidičský průkaz skupiny B
 
 \subsection*{Zájmy}
-Vedoucí v křesťanské organizaci pro děti a mládež Royal Rangers \\
-Deskové hry, turistika}
+\begin{itemize}[label={}]
+\item Vedoucí v~křesťanské organizaci pro děti a~mládež Royal Rangers
+\item Deskové hry, turistika
+\end{itemize}
 
 \end{document}
 
