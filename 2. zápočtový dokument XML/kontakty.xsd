@@ -23,9 +23,10 @@
 
     <xsd:complexType name="osobaType">
         <xsd:sequence>
-            <xsd:element name="titul" minOccurs="0" type="nonemptyStringMax127Chars"/>
+            <xsd:element name="titul_pred" minOccurs="0" maxOccurs="unbounded" type="nonemptyStringMax127Chars"/>
             <xsd:element name="jmeno" type="nonemptyStringMax127Chars"/>
             <xsd:element name="prijmeni" type="nonemptyStringMax127Chars"/>
+            <xsd:element name="titul_za" minOccurs="0" maxOccurs="unbounded" type="nonemptyStringMax127Chars"/>
         </xsd:sequence>
     </xsd:complexType>
 
