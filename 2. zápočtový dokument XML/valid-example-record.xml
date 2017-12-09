@@ -3,9 +3,11 @@
 <kontakty>
     <kontakt>
         <osoba>
-            <titul>Mgr.</titul>
+            <titul_pred>doc.</titul_pred>
+            <titul_pred>Mgr.</titul_pred>
             <jmeno>Petr</jmeno>
             <prijmeni>Nový</prijmeni>
+            <titul_za>Ph.D.</titul_za>
         </osoba>
         <emaily>
             <email typ="pracovni">petr.novy@gmail.com</email>
@@ -17,7 +19,7 @@
         </tel_cisla>
         <web_stranky>
             <web_stranka>www.petrnovy.cz</web_stranka>
-            <web_stranka typ="osobni">www.petuvblog.blog.cz</web_stranka>
+            <web_stranka typ="osobni">http://www.petuvblog.blog.cz</web_stranka>
         </web_stranky>
         <dalsi_kontakty>
             <dalsi_kontakt typ="jiny">
