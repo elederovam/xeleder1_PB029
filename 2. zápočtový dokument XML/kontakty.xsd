@@ -81,9 +81,16 @@
     <xsd:complexType name="dalsi_kontaktType">
         <xsd:sequence>
             <xsd:element name="jmeno_sluzby" type="nonemptyLetterNumStringMax127Chars"/>
-            <xsd:element name="id_uzivatele" type="nonemptyStringMax127Chars"/>
+            <xsd:element name="id_uzivatele" type="id_uzivateleType"/>
         </xsd:sequence>
-        <xsd:attribute name="typ" type="typ_kontaktu" />
+    </xsd:complexType>
+
+    <xsd:complexType name="id_uzivateleType">
+        <xsd:simpleContent>
+          <xsd:extension base="nonemptyStringMax127Chars">
+            <xsd:attribute name="typ" type="typ_kontaktu" />
+          </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
 
     <xsd:complexType name="postovni_adresyType">

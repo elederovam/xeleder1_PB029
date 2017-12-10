@@ -20,7 +20,7 @@
             <web_stranka typ="osobni">www.petuvblog.blog.cz</web_stranka>
         </web_stranky>
         <dalsi_kontakty>
-            <dalsi_kontakt typ="jiny">
+            <dalsi_kontakt>
                 <jmeno_sluzby>Skype</jmeno_sluzby>
                 <id_uzivatele>petrnovy</id_uzivatele>
             </dalsi_kontakt>
