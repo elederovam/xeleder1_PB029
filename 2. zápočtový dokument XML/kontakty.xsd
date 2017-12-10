@@ -81,7 +81,7 @@
     <xsd:complexType name="dalsi_kontaktType">
         <xsd:sequence>
             <xsd:element name="jmeno_sluzby" type="nonemptyLetterNumStringMax127Chars"/>
-            <xsd:element name="id_uzivatele" type="id_uzivateleType"/>
+            <xsd:element name="id_uzivatele" maxOccurs="unbounded" type="id_uzivateleType"/>
         </xsd:sequence>
     </xsd:complexType>
 
