@@ -27,6 +27,10 @@
                 <id_uzivatele typ="jiny">petrnovy</id_uzivatele>
                 <id_uzivatele typ="osobni">petas5</id_uzivatele>
             </dalsi_kontakt>
+            <dalsi_kontakt>
+                <jmeno_sluzby>Twitter</jmeno_sluzby>
+                <id_uzivatele>petr</id_uzivatele>
+            </dalsi_kontakt>
         </dalsi_kontakty>
         <postovni_adresy>
             <postovni_adresa typ="pracovni">

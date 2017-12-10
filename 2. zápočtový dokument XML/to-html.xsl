@@ -18,9 +18,9 @@
       </head>
       <body>
         <h1 id="contacts-title">Kontakty</h1>
-        <xsl:apply-templates>
-          <xsl:sort select="prijmeni"/>
-          <xsl:sort select="jmeno"/>
+        <xsl:apply-templates select="kontakt">
+          <xsl:sort select="prijmeni" lang="cs"/>
+          <xsl:sort select="jmeno" lang="cs"/>
         </xsl:apply-templates>
       </body>
     </html>

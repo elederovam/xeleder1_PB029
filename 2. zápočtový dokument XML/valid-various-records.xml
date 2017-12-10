@@ -117,7 +117,7 @@
         <poznamky>
             <poznamka>krátká poznámka</poznamka>
             <poznamka>
-            Nějaká poznámka
+            Nějaká poznámka<br/>
             na víc řádků.
             </poznamka>
         </poznamky>
