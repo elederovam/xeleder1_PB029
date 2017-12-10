@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<kontakty>
+
+    <kontakt>
+        <osoba>
+            <titul_pred>Mgr.</titul_pred>
+            <jmeno>Lukáš</jmeno>
+            <prijmeni>Vlček</prijmeni>
+        </osoba>
+        <emaily>
+            <email typ="pracovni">lukas.vlcek@gmail.com</email>
+        </emaily>
+        <tel_cisla>
+            <tel_cislo typ="pracovni">123 456 789</tel_cislo>
+        </tel_cisla>
+        <postovni_adresy>
+            <postovni_adresa typ="osobni">
+                <ulice>Dlouhá</ulice>
+                <cislo_popisne>1024a</cislo_popisne>
+                <psc>62500</psc>
+                <mesto>Brno</mesto>
+            </postovni_adresa>
+        </postovni_adresy>
+    </kontakt>
+
+    <kontakt>
+        <osoba>
+            <jmeno>Anna</jmeno>
+            <prijmeni>Neznámá</prijmeni>
+        </osoba>
+        <emaily>
+            <email>neznama@seznam.cz</email>
+        </emaily>
+    </kontakt>
+
+    <kontakt>
+        <osoba>
+            <titul_pred>Bc.</titul_pred>
+            <jmeno>Pavel</jmeno>
+            <prijmeni>Nový</prijmeni>
+        </osoba>
+        <emaily>
+            <email typ="pracovni">pavel.novy@gmail.com</email>
+            <email typ="pracovni">novy.pavel@gmail.com</email>
+        </emaily>
+        <tel_cisla>
+            <tel_cislo>987654321</tel_cislo>
+        </tel_cisla>
+        <web_stranky>
+            <web_stranka>www.pavelnovy.cz</web_stranka>
+        </web_stranky>
+        <dalsi_kontakty>
+            <dalsi_kontakt>
+                <jmeno_sluzby>GitHub</jmeno_sluzby>
+                <id_uzivatele typ="pracovni">pavelnovy</id_uzivatele>
+            </dalsi_kontakt>
+            <dalsi_kontakt>
+                <jmeno_sluzby>Skype</jmeno_sluzby>
+                <id_uzivatele typ="pracovni">pavelnovy</id_uzivatele>
+            </dalsi_kontakt>
+        </dalsi_kontakty>
+        <postovni_adresy>
+            <postovni_adresa typ="osobni">
+                <ulice>Dlouhá</ulice>
+                <cislo_popisne>1024a</cislo_popisne>
+                <psc>62500</psc>
+                <mesto>Brno</mesto>
+            </postovni_adresa>
+        </postovni_adresy>
+        <poznamky>
+            <poznamka>Skvělý ajťák.</poznamka>
+        </poznamky>
+    </kontakt>
+
+    <kontakt>
+        <osoba>
+            <titul_pred>doc.</titul_pred>
+            <titul_pred>Mgr.</titul_pred>
+            <jmeno>Petr</jmeno>
+            <prijmeni>Nový</prijmeni>
+            <titul_za>Ph.D.</titul_za>
+        </osoba>
+        <emaily>
+            <email typ="pracovni">petr.novy@gmail.com</email>
+            <email typ="pracovni">novy.petr@gmail.com</email>
+        </emaily>
+        <tel_cisla>
+            <tel_cislo typ="pracovni">+420 123 456 789</tel_cislo>
+            <tel_cislo typ="osobni">987654321</tel_cislo>
+        </tel_cisla>
+        <web_stranky>
+            <web_stranka>www.petrnovy.cz</web_stranka>
+            <web_stranka typ="osobni">http://www.petuvblog.blog.cz</web_stranka>
+        </web_stranky>
+        <dalsi_kontakty>
+            <dalsi_kontakt>
+                <jmeno_sluzby>Skype</jmeno_sluzby>
+                <id_uzivatele typ="jiny">petrnovy</id_uzivatele>
+                <id_uzivatele typ="osobni">petas5</id_uzivatele>
+            </dalsi_kontakt>
+        </dalsi_kontakty>
+        <postovni_adresy>
+            <postovni_adresa typ="pracovni">
+                <ulice>Vejrostova</ulice>
+                <cislo_popisne>2</cislo_popisne>
+                <psc>635 00</psc>
+                <mesto>Brno</mesto>
+            </postovni_adresa>
+            <postovni_adresa typ="osobni">
+                <ulice>Dlouhá</ulice>
+                <cislo_popisne>1024a</cislo_popisne>
+                <psc>62500</psc>
+                <mesto>Brno</mesto>
+            </postovni_adresa>
+        </postovni_adresy>
+        <poznamky>
+            <poznamka>krátká poznámka</poznamka>
+            <poznamka>
+            Nějaká poznámka
+            na víc řádků.
+            </poznamka>
+        </poznamky>
+    </kontakt>
+
+    <kontakt>
+        <osoba>
+            <jmeno>Marek</jmeno>
+            <prijmeni>Líný</prijmeni>
+        </osoba>
+        <dalsi_kontakty>
+            <dalsi_kontakt>
+                <jmeno_sluzby>Facebook</jmeno_sluzby>
+                <id_uzivatele typ="osobni">Mara</id_uzivatele>
+            </dalsi_kontakt>
+            <dalsi_kontakt>
+                <jmeno_sluzby>Twitter</jmeno_sluzby>
+                <id_uzivatele typ="osobni">Mara</id_uzivatele>
+            </dalsi_kontakt>
+        </dalsi_kontakty>
+        <poznamky>
+            <poznamka>
+            Má:<br/>
+              2643 přátel na Facebooku<br/>
+              1216 přátel na Twitteru
+            </poznamka>
+        </poznamky>
+    </kontakt>
+
+</kontakty>
