@@ -148,8 +148,12 @@
 
   <xsl:template match="poznamka">
     <li>
-      <xsl:value-of select="."/>
+      <xsl:apply-templates/>
     </li>
+  </xsl:template>
+
+  <xsl:template match="br">
+    <br/>
   </xsl:template>
 
   <xsl:template name="typKontaktu">

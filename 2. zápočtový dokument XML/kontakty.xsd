@@ -111,7 +111,15 @@
 
     <xsd:complexType name="poznamkyType">
         <xsd:sequence>
-            <xsd:element name="poznamka" maxOccurs="unbounded" type="stringMax65535Chars"/>
+            <xsd:element name="poznamka" maxOccurs="unbounded" type="poznamkaType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="poznamkaType" mixed="true">
+        <xsd:sequence>
+            <xsd:element name="br" minOccurs="0" maxOccurs="unbounded">
+                <xsd:complexType/>
+            </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -170,12 +178,6 @@
         <xsd:restriction base="xsd:string">
             <xsd:minLength value="1"/>
             <xsd:maxLength value="127"/>
-        </xsd:restriction>
-    </xsd:simpleType>
-
-    <xsd:simpleType name="stringMax65535Chars">
-        <xsd:restriction base="xsd:string">
-            <xsd:maxLength value="65535"/>
         </xsd:restriction>
     </xsd:simpleType>
 
