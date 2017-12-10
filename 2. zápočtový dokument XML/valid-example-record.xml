@@ -22,9 +22,10 @@
             <web_stranka typ="osobni">http://www.petuvblog.blog.cz</web_stranka>
         </web_stranky>
         <dalsi_kontakty>
-            <dalsi_kontakt typ="jiny">
+            <dalsi_kontakt>
                 <jmeno_sluzby>Skype</jmeno_sluzby>
-                <id_uzivatele>petrnovy</id_uzivatele>
+                <id_uzivatele typ="jiny">petrnovy</id_uzivatele>
+                <id_uzivatele typ="osobni">petas5</id_uzivatele>
             </dalsi_kontakt>
         </dalsi_kontakty>
         <postovni_adresy>
